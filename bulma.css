@@ -10930,4 +10930,109 @@ dropbtn {
 
 .show {display: block;}
 
+.chat-container{
+  display: grid;
+  grid:
+    'chat-title' 78px
+    'chat-message-list' 570px
+    'chat-form' 78px;
+  background: lightblue;
+  border-radius: 10px;
+  height: 3vh;
+  width: 100%;
+
+
+}
+
+.chat-body{
+  display: grid;
+  place-items: center;
+}
+
+
+.chat-title,.chat-form{
+  background: #eee;
+}
+
+.chat-title{
+  grid-area: chat-title;
+  color:#0048AA;
+  align-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0 20px;
+  font-size: 2.0rem;
+  border-radius: 0 10px 0 0;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 75);
+}
+
+.chat-from{
+  grid-area: chat-form;
+  border-radius: 0 0 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.chat-form input{
+  outline: none;
+  padding: 20px;
+  border: 2px splid #ddd;
+  color: #330;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.chat-message-list{
+  grid-area: chat-message-list;
+  display: flex;
+  flex-direction: column-column-reverse;
+  padding: 0 5px;
+}
+
+.message-row{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 70%;
+  margin-bottom: 20px;
+}
+.you-message{
+  justify-content: flex-end;
+  justify-items: flex-end;
+  margin-top: auto;
+  padding-bottom: 100px;
+}
+
+.other-message{
+  justify-content: flex-start;
+  justify-items: flex-start;
+  padding-top: 150px;
+  margin-bottom:  auto;
+}
+
+.message-text{
+  padding:9px 14px;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.message-time{
+  font-szie: 1.3rem;
+  color: #777;
+}
+
+.you-message .message-text{
+  background: #0048AA;
+  color: #eee;
+  border: 1px solid #0048AA;
+  border-radius: 14px 14px 0 14px;
+}
+
+.other-message .message-text{
+  background: #eee;
+  color: #111;
+  border: 1px solid #ddd;
+  border-radius: 14px 14px 14px 0;
+}
+
 /*# sourceMappingURL=bulma.css.map */
